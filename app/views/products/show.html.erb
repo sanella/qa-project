@@ -1,0 +1,7 @@
+<h1>Products</h1>
+
+<h1><%= @product.title %></h1>
+<h4><%= @product.description %></h4>
+<h4><%= @product.category %></h4>
+<h4><%= @product.url %></h4>
+<%= link_to 'Remove', @dog, method: :delete, data: { confirm: 'Are you sure?' } %>

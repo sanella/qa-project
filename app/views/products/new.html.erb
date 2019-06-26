@@ -1,0 +1,11 @@
+<h1>Products#new</h1>
+<h3>Create a Product</h3>
+<%= form_with model: @product do |form| %>
+  <%= form.text_field :title, placeholder: "title" %>
+  <%= form.text_field :description, description: "Description" %>
+
+  <%= form.text_field :category, placeholder: "Category" %>
+  <%= form.text_field :url, placeholder: "Url" %>
+
+  <%= form.submit %>
+<% end %>
